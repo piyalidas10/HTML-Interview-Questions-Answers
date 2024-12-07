@@ -1,6 +1,6 @@
 # HTML-Interview-Questions-Answers
 
-| 1   | What does a DOCTYPE do? <br/><br/> Doctype is the abbreviation for the “Document type”. The Doctype declaration informs the web browser about the type and version of HTML used in building the web document (e.g. HTML5, HTML4.0, XHTML1.0).
+| 1   | What does a DOCTYPE do? <br/><br/> Doctype is the abbreviation for the “Document type”. The Doctype declaration informs the web browser about the type and version of HTML used in building the web document like HTML5, HTML4.0, XHTML1.0.
 | 2   | What happens when DOCTYPE is not given? <br/><br/> The web page is rendered in quirks mode. The web browsers engines use quirks mode to support older browsers which does not follow the W3C specifications. In quirks mode CSS class and id names are case insensitive. In standards mode they are case sensitive.
 | 3   | What is the difference between a <span> and a <div>? <br/><br/> <div> is a block level element which means it will render it on it's own line with a width of a 100% of the parent element. <span> is an inline element which means it will render on the same line as the previous element, if it is also an inline element, and it's width will be determined by it's content.
 | 4   | Name 5 common block-level and inline HTML elements? <br/><br/> block elements <h1> to <h6>, <p>, <ul>, <ol>, <li> . inline elements <span>, <a>, <strong>, <i>, <img>

@@ -33,5 +33,134 @@
 | 20   | Which is container tag? <br/><br/> Container tags require a starting as well as an ending tag. `<HTML>and </HTML>, <TITLE> and </TITLE>` are examples of container tags.
 | 21   | Why is div called div? <br/><br/> `<div>` stands for division. The elements allow semantic attributes `(e.g. lang="en-US" )`, CSS styling `(e.g., color and typography)`, or client-side scripting `(e.g., animation, hiding, and augmentation)` to be applied.
 | 22   | difference between body and main tag? <br/><br/> The main element is used to differentiate the main content of the page from other content such as navigation links or ads. In summary, the body element represents all the content on the webpage, while the main element represents the main content of the webpage.
+| 23   | What is the difference between “display: none” and “visibility: hidden”? <br/><br/> “visibility: hidden” for element will be hidden from the webpage but still takes up space. “display: none” for the element will be hidden, and also it won’t take up any space on the webpage.
+| 24   | When to use scripts in the head and when to use scripts in the body? <br/><br/> 1) Place library scripts or event scripts in the head section. 2) Place normal scripts that do not write anything on the page, in the head section until there is any performance issue. 3) Place scripts that render something on the web page at the bottom of the body section.
+| 25   | What is the difference between `<figure>` tag and <img> tag? <br/><br/> The `<figure>` tag specifies the self-contained content, like diagrams, images, code snippets, etc. `<figure>` tag is used to semantically organize the contents of an image like image, image caption, etc., whereas the `<img>` tag is used to embed the picture in the HTML5 document.
+| 26   | How to specify the metadata in HTML5? <br/><br/> `<meta>` tag which is a void tag,i.e., it does not have a closing tag. Some of the attributes used with meta tags are name, content, http-equiv, etc. 
+| 27   | What type of audio files can be played using HTML5? <br/><br/> HTML5 supports the following three types of audio file formats: 1) Mp3 2) WAV 3) Ogg
+| 22   | In how many ways can we position an HTML element? Or what are the permissible values of the position attribute? <br/><br/> 
+```
+There are mainly 7 values of position attribute that can be used to position an HTML element:
+
+static: Default value. Here the element is positioned according to the normal flow of the document.
+absolute: Here the element is positioned relative to its parent element. The final position is determined by the values of left, right, top, bottom.
+fixed: This is similar to absolute except here the elements are positioned relative to the <html> element.
+relative: Here the element is positioned according to the normal flow of the document and positioned relative to its original/ normal position.
+initial: This resets the property to its default value.
+inherit: Here the element inherits or takes the property of its parent.
+```
+| 22   | In how many ways you can display HTML elements? <br/><br/> 
+```
+inline: Using this we can display any block-level element as an inline element. The height and width attribute values of the element will not affect.
+block: using this, we can display any inline element as a block-level element. 
+inline-block: This property is similar to inline, except by using the display as inline-block, we can actually format the element using height and width values.
+flex: It displays the container and element as a flexible structure. It follows flexbox property.
+inline-flex: It displays the flex container as an inline element while its content follows the flexbox properties.
+grid: It displays the HTML elements as a grid container.
+none: Using this property we can hide the HTML element.
+
+
+Below are some of the display types which are rarely used:
+
+table
+inline-table
+table-cell
+table-column
+table-row
+inline-grid
+list-item
+inherit
+initial
+table-caption
+```
+| 22   | Explain new input types provided by HTML5 for forms? <br/><br/> Following are the significant new data types offered by HTML5:
+```
+Date - Only select date by using type = "date"
+Week - Pick a week by using type = "week"
+Month - Only select month by using type = "month"
+Time - Only select time by using type = "time".
+Datetime - Combination of date and time by using type = "datetime"
+Datetime-local - Combination of  date and time by using type = "datetime-local." but ignoring the timezone
+Color - Accepts multiple colors using type = "color"
+Email - Accepts one or more email addresses using type = "email"
+Number - Accepts a numerical value with additional checks like min and max using type = "number"
+Search - Allows searching queries by inputting text using type = "search"
+Tel - Allows different phone numbers by using type = "tel"
+Placeholder - To display a short hint in the input fields before entering a value using type = "placeholder"
+Range - Accepts a numerical value within a specific range using type = "range"
+Url - Accepts a web address using type = "url”
+```
+```
+<form>  
+        <div>
+            <label>Date:</label>
+            <input type="date" id="date" />
+            <br>
+            <label>Week:</label>
+            <input type="week" id="week" />
+            <br>
+            <label>Month:</label>
+            <input type="month" id="month" />
+            <br>
+            <label>Time:</label>
+            <input type="time" id="time" />
+            <br>
+            <label>Datetime:</label>
+            <input type="datetime" id="datetime" />
+            <br>
+            <label>Datetime Local:</label>
+            <input type="datetime-local" id="datetime-local" />
+            <br>
+            <label>Color:</label>
+            <input type="color" id="color"/>
+            <br>
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="email address" />
+            <br>
+            <label>Number:</label>
+            <input type="number" id="number" />
+            <br>
+            <label>Search:</label>
+            <input type="search" id="search" />
+            <br>
+            <label>Phone:</label>
+            <input type="tel" id="phone" placeholder="Phone Number" pattern="\d{10}$" />
+            <br>
+            <label>Range:</label>
+            <input type="range" id="range" />
+            <br>
+            <label>URL:</label>
+            <input type="url" id="url"/>
+        </div>  
+    </form>
+```
+| 22   | What are the New tags in Media Elements in HTML5? <br/><br/> 
+```
+<audio> - Used for sounds, audio streams, or music, embed audio content without any additional plug-in.
+<video> - Used for video streams, embed video content etc.
+<source> - Used for multiple media resources in media elements, such as audio, video, etc.
+<embed> - Used for an external application or embedded content.
+<track> - Used for subtitles in the media elements such as video or audio.
+<label>
+       Video:
+   </label>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+    <br>
+    <label>
+        Embed:
+    </label>
+    <embed type="video/webm" src="https://www.youtube.com/embed/MpoE6s2psCw" width="400" height="300">
+    <br>
+    <label>
+        Audio:
+    </label>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+```
+
 
 

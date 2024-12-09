@@ -15,7 +15,7 @@
     <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
 </main>
 ```
-| No. | Questions & Answers                                                                                                                                                  |
+| No. | Questions & Answers                                                                                                                                                  
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 7   | Define semantic markup. What are the semantic meanings for <strong>section, article, aside, nav, header, footer tags</strong> and when/how should each be used in structuring html markup? <br/><br/> <strong>header tag</strong> is used to contain introductory and navigational information about a section of the page. This can include the section heading, the author’s name, time and date of publication, table of contents, or other navigational information. <strong>article tag</strong> is meant to house a self-contained composition that can logically be independently recreated outside of the page without losing it’s meaining. Individual blog posts or news stories are good examples. <strong>section tag</strong> is a flexible container for holding content that shares a common informational theme or purpose. <strong>footer</strong> is used to hold information that should appear at the end of a section of content and contain additional information about the section. Author’s name, copyright information, and related links are typical examples of such content.
 | 8   | When should you use section, div or article? <br/><br/> <strong>section</strong>, group of content inside is related to a single theme, and should appear as an entry in an outline of the page. It’s a chunk of related content, like a subsection of a long article, a major part of the page (eg the news section on the homepage), or a page in a webapp’s tabbed interface. A section normally has a heading (title) and maybe a footer too. <strong>article tag</strong>, represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content. <strong>div tag</strong>, on the other hand, does not convey any meaning, aside from any found in its class, lang and title attributes.
@@ -38,7 +38,7 @@
 | 25   | What is the difference between `<figure>` tag and <img> tag? <br/><br/> The `<figure>` tag specifies the self-contained content, like diagrams, images, code snippets, etc. `<figure>` tag is used to semantically organize the contents of an image like image, image caption, etc., whereas the `<img>` tag is used to embed the picture in the HTML5 document.
 | 26   | How to specify the metadata in HTML5? <br/><br/> `<meta>` tag which is a void tag,i.e., it does not have a closing tag. Some of the attributes used with meta tags are name, content, http-equiv, etc. 
 | 27   | What type of audio files can be played using HTML5? <br/><br/> HTML5 supports the following three types of audio file formats: 1) Mp3 2) WAV 3) Ogg
-| 22   | In how many ways can we position an HTML element? Or what are the permissible values of the position attribute? <br/><br/> 
+| 28   | In how many ways can we position an HTML element? Or what are the permissible values of the position attribute? <br/><br/> 
 ```
 There are mainly 7 values of position attribute that can be used to position an HTML element:
 
@@ -49,7 +49,9 @@ relative: Here the element is positioned according to the normal flow of the doc
 initial: This resets the property to its default value.
 inherit: Here the element inherits or takes the property of its parent.
 ```
-| 22   | In how many ways you can display HTML elements? <br/><br/> 
+| No. | Questions & Answers                                                                                                                                                  
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 29   | In how many ways you can display HTML elements? <br/><br/> 
 ```
 inline: Using this we can display any block-level element as an inline element. The height and width attribute values of the element will not affect.
 block: using this, we can display any inline element as a block-level element. 
@@ -73,7 +75,9 @@ inherit
 initial
 table-caption
 ```
-| 22   | Explain new input types provided by HTML5 for forms? <br/><br/> Following are the significant new data types offered by HTML5:
+| No. | Questions & Answers                                                                                                                                                  
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 30   | Explain new input types provided by HTML5 for forms? <br/><br/> Following are the significant new data types offered by HTML5:
 ```
 Date - Only select date by using type = "date"
 Week - Pick a week by using type = "week"
@@ -134,7 +138,9 @@ Url - Accepts a web address using type = "url”
         </div>  
     </form>
 ```
-| 22   | What are the New tags in Media Elements in HTML5? <br/><br/> 
+| No. | Questions & Answers                                                                                                                                                  
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 31   | What are the New tags in Media Elements in HTML5? <br/><br/> 
 ```
 <audio> - Used for sounds, audio streams, or music, embed audio content without any additional plug-in.
 <video> - Used for video streams, embed video content etc.

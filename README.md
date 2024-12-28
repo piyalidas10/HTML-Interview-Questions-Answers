@@ -38,7 +38,27 @@
 | 25   | What is the difference between `<figure>` tag and <img> tag? <br/><br/> The `<figure>` tag specifies the self-contained content, like diagrams, images, code snippets, etc. `<figure>` tag is used to semantically organize the contents of an image like image, image caption, etc., whereas the `<img>` tag is used to embed the picture in the HTML5 document.
 | 26   | How to specify the metadata in HTML5? <br/><br/> `<meta>` tag which is a void tag,i.e., it does not have a closing tag. Some of the attributes used with meta tags are name, content, http-equiv, etc. 
 | 27   | What type of audio files can be played using HTML5? <br/><br/> HTML5 supports the following three types of audio file formats: 1) Mp3 2) WAV 3) Ogg
-| 28   | In how many ways can we position an HTML element? Or what are the permissible values of the position attribute? <br/><br/> 
+| 28   | What is the difference between `id` and `class` attributes? <br/><br/> 1) A Class name can be used by multiple HTML elements, while an ID name must only be used by one HTML element within the page. 2) Each element can have only one ID. You can use multiple classes on the same element. 3) IDs use “#” in the CSS. Classes use a “.”. 4) ID has higher order than class with CSS styles. If you declare id & class both with an element. the styles with id will be paplicable first.
+| 29   | How does the doctype declaration affect a web page? <br/><br/> A valid doctype declaration triggers standards mode, which aims for a more consistent and standards-compliant rendering of the page. Without a doctype declaration or with an invalid one, browsers may revert to "quirks mode," which can lead to unexpected rendering behavior based on older compatibility practices. `< !DOCTYPE html >`
+```
+What Happens Without <!DOCTYPE html>
+Without <!DOCTYPE html>, your HTML code can still run, but it may face several significant drawbacks:
+
+Quirks Mode Activation: Browsers may switch to quirks mode, leading to outdated behaviors that cause inconsistent rendering compared to standards mode.
+Rendering Issues: CSS properties like box-sizing, margins, and widths may be interpreted differently, causing layout problems and misaligned elements that are difficult to debug.
+Cross-Browser Inconsistencies: Different browsers might render the page differently in quirks mode, making it hard to achieve cross-browser consistency.
+CSS and JavaScript Problems: Modern features like Flexbox, Grid, and certain JavaScript methods may not work correctly, causing compatibility issues.
+Unpredictable Behavior: Without <!DOCTYPE>, rendering becomes unpredictable, making debugging more challenging and leading to unpredictable page behavior when adding new features.
+```
+| No.  | Questions & Answers                                                                                                                                               
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 30   | Explain semantic HTML and its importance. <br/><br/> Semantic HTML refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages. It makes web pages more informative and adaptable, allowing browsers and search engines to better interpret content.
+| 31   | What are `meta` tags, and why are they used? <br/><br/> Meta tags are pieces of information you use to tell the search engines and those viewing your site more about your page and the information it contains. Meta tags include: 1) Title tags: the title of your page, which should be unique for every page you publish. 2)Meta description: a description of the content on the page. 3) Viewport tag: impacts how your content appears on mobile devices 4) Content type: impacts how your page is rendered in the browser. <br/> https://www.geeksforgeeks.org/what-are-meta-tags-in-seo/
+| 32   | How does the `defer` attribute in a script tag work? <br/><br/> If the defer attribute is set, it specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing. Note: The defer attribute is only for external scripts (should only be used if the src attribute is present). <br/> The defer attribute tells the browser not to wait for the script. Instead, the browser will continue to process the HTML, build DOM. The script loads “in the background”, and then runs when the DOM is fully built.
+| 33   | How do you optimize images for web performance in HTML? <br/><br/> 1) Reduce the number of images. Remove them. Concatenate images into single files (i.e., image sprites) 2) Load critical images first. Prioritize above-the-fold content. 3) Compress and reduce image data as much as possible without compromising acceptable quality.
+| 34   | What are custom data attributes, and how are they used? <br/><br/> Custom data attributes are attributes that start with the prefix data- and can have any name you want, as long as it is valid HTML. For example, you can create a custom data attribute called data-color and assign it a value of red, blue, or green. `<p data-about="blog">Informational text entries</p>`
+| 35   | How would you create an accessible custom tooltip using only HTML? <br/><br/> The title attribute in HTML is a simple and native way to create tooltips in HTML. `<button class="button" title="This is button 1"> Button 1 </button>`
+| 36   | In how many ways can we position an HTML element? Or what are the permissible values of the position attribute? <br/><br/> 
 ```
 There are mainly 7 values of position attribute that can be used to position an HTML element:
 
@@ -51,7 +71,7 @@ inherit: Here the element inherits or takes the property of its parent.
 ```
 | No. | Questions & Answers                                                                                                                                                  
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 29   | In how many ways you can display HTML elements? <br/><br/> 
+| 37   | In how many ways you can display HTML elements? <br/><br/> 
 ```
 inline: Using this we can display any block-level element as an inline element. The height and width attribute values of the element will not affect.
 block: using this, we can display any inline element as a block-level element. 
@@ -77,7 +97,7 @@ table-caption
 ```
 | No. | Questions & Answers                                                                                                                                                  
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 30   | Explain new input types provided by HTML5 for forms? <br/><br/> Following are the significant new data types offered by HTML5:
+| 38   | Explain new input types provided by HTML5 for forms? <br/><br/> Following are the significant new data types offered by HTML5:
 ```
 Date - Only select date by using type = "date"
 Week - Pick a week by using type = "week"
@@ -140,7 +160,7 @@ Url - Accepts a web address using type = "url”
 ```
 | No. | Questions & Answers                                                                                                                                                  
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 31   | What are the New tags in Media Elements in HTML5? <br/><br/> 
+| 39   | What are the New tags in Media Elements in HTML5? <br/><br/> 
 ```
 <audio> - Used for sounds, audio streams, or music, embed audio content without any additional plug-in.
 <video> - Used for video streams, embed video content etc.
